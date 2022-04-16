@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:im_vips_student/pages/chillout.dart';
+import 'package:im_vips_student/pages/events.dart';
+import 'package:im_vips_student/pages/notes.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 import 'package:im_vips_student/core/routes.dart';
@@ -16,9 +19,15 @@ class RootPage extends StatelessWidget {
     VxState.watch(context, on: [RouteTo]);
 
     switch (VxState.store?.currentRoute) {
-      case "/":
+      case Routes.home:
         return HomePage();
-      case "/people":
+      case Routes.notes:
+        return NotesPage();
+      case Routes.events:
+        return EventsPage();
+      case Routes.chillout:
+        return ChilloutPage();
+      case Routes.people:
         return PeoplePage();
       default:
         return HomePage();
