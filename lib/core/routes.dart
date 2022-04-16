@@ -4,7 +4,10 @@ import 'package:im_vips_student/core/store.dart';
 
 class Routes {
   static const home = "/";
-  static const settings = "/settings";
+  static const notes = "/notes";
+  static const events = "/events";
+  static const chillout = "/chillout";
+  static const people = "/people";
 }
 
 class RouteTo extends VxMutation<GStore> {

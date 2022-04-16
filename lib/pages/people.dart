@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-class SettingsPage extends StatelessWidget {
-  const SettingsPage({Key? key}) : super(key: key);
+class PeoplePage extends StatelessWidget {
+  const PeoplePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return [
-      "Settings".text.make(),
+      "People".text.make(),
     ].vStack();
   }
 }

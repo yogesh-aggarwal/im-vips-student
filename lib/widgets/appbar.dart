@@ -22,9 +22,9 @@ PreferredSize IMVSAppBar(BuildContext context) {
           ),
         ),
         child: [
-          "IMVS".text.xl2.bold.make(),
+          "IMVS".text.size(18).bold.make(),
         ].hStack(alignment: MainAxisAlignment.center).px16(),
       ),
-    ).pOnly(top: kToolbarHeight - 10.0),
+    ).pOnly(top: MediaQuery.of(context).padding.top),
   );
 }

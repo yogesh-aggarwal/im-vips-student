@@ -7,7 +7,7 @@ import 'package:im_vips_student/widgets/appbar.dart';
 import 'package:im_vips_student/widgets/bottombar.dart';
 
 import 'package:im_vips_student/pages/home.dart';
-import 'package:im_vips_student/pages/settings.dart';
+import 'package:im_vips_student/pages/people.dart';
 
 class RootPage extends StatelessWidget {
   const RootPage({Key? key}) : super(key: key);
@@ -18,8 +18,8 @@ class RootPage extends StatelessWidget {
     switch (VxState.store?.currentRoute) {
       case "/":
         return HomePage();
-      case "/settings":
-        return SettingsPage();
+      case "/people":
+        return PeoplePage();
       default:
         return HomePage();
     }
