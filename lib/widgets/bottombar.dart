@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:im_vips_student/core/routes.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:velocity_x/velocity_x.dart';
 
@@ -24,27 +25,39 @@ PreferredSize IMVSBottomAppBar(BuildContext context) {
         ),
         child: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              RouteTo(to: "/");
+            },
             icon: Icon(LineAwesomeIcons.home, size: 24),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              RouteTo(to: "/notes");
+            },
             icon: Icon(LineAwesomeIcons.book, size: 24),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              RouteTo(to: "/people");
+            },
             icon: Icon(LineAwesomeIcons.user_friends, size: 24),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              RouteTo(to: "/chillout");
+            },
             icon: Icon(LineAwesomeIcons.glass_cheers, size: 24),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              RouteTo(to: "/events");
+            },
             icon: Icon(LineAwesomeIcons.calendar, size: 24),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              RouteTo(to: "/settings");
+            },
             icon: Icon(LineAwesomeIcons.cog, size: 24),
           ),
         ].hStack(alignment: MainAxisAlignment.spaceBetween).px16(),
